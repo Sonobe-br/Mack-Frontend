@@ -1,0 +1,90 @@
+/*variáveis*/
+:root {
+    --bgColor: #f0f0f0;
+    --fontColor: #6a6a6a;
+    --shadowColor: rgba(87, 87, 87, 0.29);
+    --buttonColor: #a8e885;
+    --cardColor: #fff;
+}
+
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*reset*/
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bgColor);
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+small {
+    font-size: 0.7em
+}
+
+/*estilos básicos*/
+* {
+    font-family: 'Roboto', sans-serif;
+    color: var(--fontColor);
+}
+
+form {
+    border-radius: 10px;
+    background: var(--cardColor);
+
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+input[type='submit'] {
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    background-color: var(--buttonColor);
+}
+
+input[type='text'],
+input[type='password'] {
+    border: none;
+    border: 1px solid var(--fontColor);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px
+}
+
+form div {
+    align-self: flex-end
+}
+
+/*mobile*/
+
+form {
+    width: 90%;
+}
+
+* {
+    font-size: 20pt;
+}
+
+
+/*web*/
+@media only screen and (min-width : 920px) {
+    form {
+        width: 30%;
+    }
+
+    * {
+        font-size: 12pt;
+    }
+}
